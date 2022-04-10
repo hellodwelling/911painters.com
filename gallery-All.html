@@ -695,14 +695,14 @@
                     <div class="w-full sm:w-auto">
                         
                         <div class="w-full sm:w-auto">
-                            <a
-                            target = "_blank" href="mailto:None?subject=[company type] Job - Requesting a quote&body=Hi [[Owner Name]],%0d%0a %0d%0a  My name is [your name]. I&#x27;m writing from your website about requesting a quote for a [[company type]] job. I&#x27;ve included my information below - %0d%0a%0d%0a Quick Description: %0d%0a Address: [your address here] %0d%0a Urgency: [low, medium, high] %0d%0a Would like a quote by: [date] %0d%0a Additional notes: %0d%0a %0d%0a Thanks!"
+                            <button
                             :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
-                            class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus-visible:ring-2 ring-primary ring-opacity-75 ring-offset-2"
-                            >
-                                info@911painters.com
-                            </a>
-                        </div>
+                            @click="contactModalOpen = true"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus-visible:ring-2 ring-primary ring-opacity-75 ring-offset-2"
+                                >
+                                Send Us a Text
+                            </button>
+                        </div> 
                         
                             
                      
@@ -968,12 +968,12 @@
                     <!-- Bottom CTAs -->
                     <div class="d-none p-1 bg-primary sm:bg-gray-50">
                         
-                            <a
-                            target = "_blank" href="mailto:None?subject=[company type] Job - Requesting a quote&body=Hi [[Owner Name]],%0d%0a %0d%0a  My name is [your name]. I&#x27;m writing from your website about requesting a quote for a [[company type]] job. I&#x27;ve included my information below - %0d%0a%0d%0a Quick Description: %0d%0a Address: [your address here] %0d%0a Urgency: [low, medium, high] %0d%0a Would like a quote by: [date] %0d%0a Additional notes: %0d%0a %0d%0a Thanks!"
+                            <button
+                            @click="contactModalOpen = true"
                             class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
                             >
-                                info@911painters.com
-                            </a>
+                                Send Us a Text
+                            </button>
                         
                         
                             <a
@@ -1102,11 +1102,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
                             
                         </div>
 
@@ -1207,11 +1207,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1228,11 +1228,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="" /> -->
                             
                         </div>
 
@@ -1807,7 +1807,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1847,7 +1847,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/33f4def8-54f7-4dec-96d8-b54b8f415fec.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1855,7 +1855,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e51f4ace-ecbf-4ab8-8e83-f853b3556878.jpeg" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/93886f43-9d4e-4c7b-9f66-adf81d53bb89.png" alt="All Photos for 911 Houston Painters, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2643,90 +2643,90 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178924"
-                                                    name="178924"
+                                                    id="contact-service-178932"
+                                                    name="178932"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior House Painting"
                                             />
-                                            <label for="contact-label-service-178924" class="ml-3 text-sm font-medium text-gray-700">Exterior House Painting</label>
+                                            <label for="contact-label-service-178932" class="ml-3 text-sm font-medium text-gray-700">Exterior House Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178925"
-                                                    name="178925"
+                                                    id="contact-service-178933"
+                                                    name="178933"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Painting"
                                             />
-                                            <label for="contact-label-service-178925" class="ml-3 text-sm font-medium text-gray-700">Stucco Painting</label>
+                                            <label for="contact-label-service-178933" class="ml-3 text-sm font-medium text-gray-700">Stucco Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178926"
-                                                    name="178926"
+                                                    id="contact-service-178934"
+                                                    name="178934"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior House Painting"
                                             />
-                                            <label for="contact-label-service-178926" class="ml-3 text-sm font-medium text-gray-700">Interior House Painting</label>
+                                            <label for="contact-label-service-178934" class="ml-3 text-sm font-medium text-gray-700">Interior House Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178927"
-                                                    name="178927"
+                                                    id="contact-service-178935"
+                                                    name="178935"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Commercial Painting"
                                             />
-                                            <label for="contact-label-service-178927" class="ml-3 text-sm font-medium text-gray-700">Commercial Painting</label>
+                                            <label for="contact-label-service-178935" class="ml-3 text-sm font-medium text-gray-700">Commercial Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178928"
-                                                    name="178928"
+                                                    id="contact-service-178936"
+                                                    name="178936"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-178928" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-178936" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178929"
-                                                    name="178929"
+                                                    id="contact-service-178937"
+                                                    name="178937"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall and Plastering"
                                             />
-                                            <label for="contact-label-service-178929" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                            <label for="contact-label-service-178937" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178930"
-                                                    name="178930"
+                                                    id="contact-service-178938"
+                                                    name="178938"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pressure Washing"
                                             />
-                                            <label for="contact-label-service-178930" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
+                                            <label for="contact-label-service-178938" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178931"
-                                                    name="178931"
+                                                    id="contact-service-178939"
+                                                    name="178939"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-178931" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-178939" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                     </div>
@@ -2758,90 +2758,90 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178924"
-                                                    name="178924"
+                                                    id="contact-service-178932"
+                                                    name="178932"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior House Painting"
                                             />
-                                            <label for="contact-label-service-178924" class="ml-3 text-sm font-medium text-gray-700">Exterior House Painting</label>
+                                            <label for="contact-label-service-178932" class="ml-3 text-sm font-medium text-gray-700">Exterior House Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178925"
-                                                    name="178925"
+                                                    id="contact-service-178933"
+                                                    name="178933"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Painting"
                                             />
-                                            <label for="contact-label-service-178925" class="ml-3 text-sm font-medium text-gray-700">Stucco Painting</label>
+                                            <label for="contact-label-service-178933" class="ml-3 text-sm font-medium text-gray-700">Stucco Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178926"
-                                                    name="178926"
+                                                    id="contact-service-178934"
+                                                    name="178934"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior House Painting"
                                             />
-                                            <label for="contact-label-service-178926" class="ml-3 text-sm font-medium text-gray-700">Interior House Painting</label>
+                                            <label for="contact-label-service-178934" class="ml-3 text-sm font-medium text-gray-700">Interior House Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178927"
-                                                    name="178927"
+                                                    id="contact-service-178935"
+                                                    name="178935"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Commercial Painting"
                                             />
-                                            <label for="contact-label-service-178927" class="ml-3 text-sm font-medium text-gray-700">Commercial Painting</label>
+                                            <label for="contact-label-service-178935" class="ml-3 text-sm font-medium text-gray-700">Commercial Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178928"
-                                                    name="178928"
+                                                    id="contact-service-178936"
+                                                    name="178936"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-178928" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-178936" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178929"
-                                                    name="178929"
+                                                    id="contact-service-178937"
+                                                    name="178937"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall and Plastering"
                                             />
-                                            <label for="contact-label-service-178929" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                            <label for="contact-label-service-178937" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178930"
-                                                    name="178930"
+                                                    id="contact-service-178938"
+                                                    name="178938"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pressure Washing"
                                             />
-                                            <label for="contact-label-service-178930" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
+                                            <label for="contact-label-service-178938" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-178931"
-                                                    name="178931"
+                                                    id="contact-service-178939"
+                                                    name="178939"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-178931" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-178939" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                     </div>
